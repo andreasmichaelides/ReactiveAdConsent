@@ -1,0 +1,5 @@
+<resources>
+    <string name="consent_lib_url_privacy_policy">https://www.google.com</string>
+    <string name="consent_lib_paid_app_package_name"> </string>
+    <string name="consent_lib_publisher_id"> </string>
+</resources>
