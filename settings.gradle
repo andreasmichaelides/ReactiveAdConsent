@@ -1,1 +1,1 @@
-include ':adconsentmodule', ':statestream'
+include ':adconsentmodule'

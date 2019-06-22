@@ -17,13 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation project(path: ':statestream')
-
+    implementation 'com.github.andreasmichaelides:StateStream:v1.0.0'
     // Consent
     implementation 'com.google.android.ads.consent:consent-library:1.0.7'
     // RX
@@ -33,6 +35,7 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:1.0.2"
     // Koin AndroidX Scope feature
     implementation "org.koin:koin-androidx-scope:1.0.2"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
