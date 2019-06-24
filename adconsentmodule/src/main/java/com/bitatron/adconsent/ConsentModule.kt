@@ -23,7 +23,7 @@ val consentModule = module {
 
     // Domain
     factory { SetUserConsentUseCase(get()) }
-    factory { GetConsentStatusUseCase(get(), get()) }
+    factory { GetConsentStatusUseCase(get(), get(), get()) }
     factory { GetIfConsentSetUseCase(get()) }
 
     // Presentation

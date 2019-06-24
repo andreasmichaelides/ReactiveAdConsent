@@ -22,7 +22,7 @@ class ConsentStatusSourceImpl(private val context: Context,
 
                             override fun onFailedToUpdateConsentInfo(errorDescription: String) {
                                 // User's consent status failed to update.
-                                it.onError(Exception(errorDescription))
+                                it.tryOnError(Exception(errorDescription))
                             }
                         })
                     }

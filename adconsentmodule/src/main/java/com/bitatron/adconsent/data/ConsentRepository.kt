@@ -6,5 +6,4 @@ interface ConsentRepository {
 
     fun getConsentStatus(): Single<ConsentStatus>
 
-
 }
